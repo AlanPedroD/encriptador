@@ -18,6 +18,11 @@ function btnEncriptar() {
 
     document.querySelector(".conteudo-da-direita").style.backgroundColor = "black";
 
+    if (textoEncriptado == 0){
+        document.getElementById("mensagem-nao-encontrada").style.display = "block"
+        document.getElementById("mensagem-nao-encontrada").style.color = "white"
+    }
+
 }
 
 
@@ -56,3 +61,11 @@ function Desencriptar(stringDesencriptada) {
     return stringDesencriptada;
 
 }
+
+function copiar() {
+    var textoCopiado = document.querySelector(".mensagem");
+    textoCopiado.select();
+    textoCopiado.setSelectionRange(0, 99999);
+    document.execCommand("copy");
+    alert("Mensagem copiada: " + textoCopiado.value + "✅");
+    }

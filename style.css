@@ -23,10 +23,12 @@ main{
     max-width: 1440px;
     margin: 0 auto;
     background-color: #F3F5FC;
+    display: flex;
+    justify-content: space-around;
 }
 
 .logo h1{
-    margin-left: 200px;
+    /* margin-left: 200px; */
     padding: 20px;
 }
 
@@ -114,6 +116,13 @@ main{
 .conteudo-da-direita textarea{
     border: none;
     font-size: 16px;
+    margin-bottom: 10px;
+    border-radius: 24px;
+    margin-bottom: 10px;
+}
+
+#div-aparece button{
+    padding: 5px 20px;
 }
 
 @media(max-width: 1024px){
@@ -180,6 +189,8 @@ main{
 
     .logo h1{
         text-align: center;
+        /* width: 100%; */
+        font-size: 20px;
     }
    
 }
